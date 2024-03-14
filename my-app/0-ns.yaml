@@ -12,3 +12,11 @@ metadata:
   name: prod
   labels:
     name: prod    
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: stage1
+  labels:
+    name: stage1       
