@@ -7,7 +7,7 @@ spec:
   ports:
     - port: 80
   selector:
-    app: ndevelopment
+    app: development
 ---
 apiVersion: apps/v1
 kind: Deployment
