@@ -7,21 +7,21 @@ spec:
   ports:
     - port: 80
   selector:
-    app: nginx-project
+    app: ndevelopment
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-project
+  name: development
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: nginx-project
+      app: development
   template:
     metadata:
       labels:
-        app: nginx-project
+        app: development
     spec:
       containers:
         - name: nginx
